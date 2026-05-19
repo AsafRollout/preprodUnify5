@@ -1,0 +1,13 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: target-group
+
+name: tgToRef
+
+description: 
+
+conditions:
+  allOf:
+    - property:
+        name: cpToRef
+        operator: is-false
